@@ -1,0 +1,75 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Upskill" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_200</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="ShapeAppearanceOverlay.App.CornerSize50Percent" parent="">
+        <item name="cornerSize">50%</item>
+    </style>
+
+
+    <style name="form_text_hint_size" parent="TextAppearance.Design.Hint">
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:textColorHint">@color/grey</item>
+        <item name="android:textColor">@color/black</item>
+
+    </style>
+
+
+
+    <style name="formInputLayoutNormal" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <item name="boxBackgroundColor">@android:color/transparent</item>
+        <item name="boxStrokeColor">@color/box_stroke_color</item>
+
+        <item name="boxStrokeWidthFocused">0.7dp</item>
+        <item name="boxStrokeWidth">0.5dp</item>
+
+        <item name="boxCornerRadiusBottomStart">@dimen/dp_7</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/dp_7</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/dp_7</item>
+        <item name="boxCornerRadiusTopStart">@dimen/dp_7</item>
+
+
+        <item name="hintTextAppearance">@style/form_text_hint_size</item>
+        <item name="endIconTint">@color/selector_form_stroke</item>
+        <item name="errorTextColor">@color/red</item>
+        <item name="endIconMode">clear_text</item>
+
+    </style>
+
+
+    <style name="formInputLayoutPassword" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <item name="boxBackgroundColor">@android:color/transparent</item>
+        <item name="boxStrokeColor">@color/box_stroke_color</item>
+
+        <item name="boxStrokeWidth">0.5dp</item>
+        <item name="boxStrokeWidthFocused">0.7dp</item>
+
+        <item name="boxCornerRadiusBottomStart">@dimen/dp_7</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/dp_7</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/dp_7</item>
+        <item name="boxCornerRadiusTopStart">@dimen/dp_7</item>
+
+        <item name="hintTextAppearance">@style/form_text_hint_size</item>
+        <item name="errorTextColor">@color/red</item>
+        <item name="endIconMode">password_toggle</item>
+
+    </style>
+
+</resources>
