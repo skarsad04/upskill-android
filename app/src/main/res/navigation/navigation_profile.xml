@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@+id/navigation_profile"
+    app:startDestination="@id/profilesFragment"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <fragment
+        android:id="@+id/profilesFragment"
+        android:name="com.hcl.upskill.ui.profile.listing.ProfilesFragment"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/action_profilesFragment_to_profileDetailFragment"
+            app:destination="@id/profileDetailFragment"
+            app:popUpTo="@id/profilesFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/profileDetailFragment"
+        android:name="com.hcl.upskill.ui.profile.detail.ProfileDetailFragment"
+        tools:layout="@layout/fragment_profile_detail" />
+
+</navigation>
